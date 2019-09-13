@@ -10,6 +10,7 @@ The following sketches are my three concepts for the [Mapping Time](https://dvi
 
 3. The final example highlights three shapes (from large to small) to represent the hiearchy of time. Using colour meters in each shape the progression of time is highlighted. This example uses the retinal variables of colour, size and shape.
 
+<br>
 
 ![Image of Hand-drawn sketches](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/mappingTime_Sketches2.jpg)
 
