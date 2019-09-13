@@ -24,3 +24,5 @@ function draw() {
   // draw the time string to the canvas
   text(now.text.date, 30, 50)
   text(now.text.time, 30, 100)
+
+}
