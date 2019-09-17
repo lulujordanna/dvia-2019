@@ -1,24 +1,21 @@
-var x = 20 // starting x position to draw
-var y = 20  // starting y position to draw
+var x = 20 
+var y = 20
 var maxWidth = 200; 
 var hourHeight = 200; 
 var minuteHeight = 100; 
 var secondsHeight = 50; 
-var spacing = 10 // the vertical space to skip between bars
+var spacing = 10 
 
-var discrete = true // flag whether to have the bars 'tick' from one value to the next or move smoothly,
+var discrete = true // The bars 'tick' from one value to the next
 
-//this gets called only once in the very beginning
 function setup() {
 	createCanvas(440, 410)
 }
 
-//this gets called every frame (about 60 frames per second)
 function draw() {
   background(255)
   noStroke()
 
-  // measure the current time & calculate the width in pixels of each bar
   var now = clock()
   if (discrete){
     var hourWidth = map(now.hour, 1,12, 0,maxWidth) 
@@ -30,21 +27,25 @@ function draw() {
     secsWidth = maxWidth * now.progress.min
   }
 
-  //draw 3 background bars to indicate the max width
+  let from = color(218, 165, 32);
+  let to = color(72, 61, 139);
+  let dayColour = lerpColor(from, to, now.progress.day);
+
+  // Draw 3 background bars of different sizes 
   fill(244, 244, 244)
   rect(x, y, maxWidth, hourHeight)
   rect(x+100, y+100 + 100+spacing,  maxWidth,  minuteHeight)
   rect(x+200, y+200 + 2*(50+spacing), maxWidth, secondsHeight)
 
-  // draw the hours bar at the top...
-  fill(79,48,141)
+  // Draw the hours bar at the top
+  fill(dayColour)
   rect(x, y, hourWidth, hourHeight)
 
-  // ...the minutes bar in the middle...
+  // The minutes bar in the middle
   fill(113, 94, 170)
   rect(x+100, y+100 + minuteHeight+spacing,  minsWidth, minuteHeight)
 
-  // ...and the seconds bar at the bottom
+  // The seconds bar at the bottom
   fill(148, 134, 191)
   rect(x+200, y+200 + 2*(secondsHeight+spacing), secsWidth, secondsHeight)
 } 

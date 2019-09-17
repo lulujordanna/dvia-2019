@@ -1,5 +1,5 @@
-var mRot = 0; 
-var sRot = 0; 
+var maxRadius = 100; 
+var minRadius = 20; 
 
  function setup() {
   createCanvas(400, 400)
@@ -9,33 +9,40 @@ var sRot = 0;
 function draw() {
   background(255)
   var now = clock()
+
+  var mRot = now.progress.hour*360 
+  var sRot = now.progress.min*360 
+
+
+  var dayRadius = map(now.progress.day, 0, 1, minRadius, maxRadius); 
+  let from = color(147, 141, 226);
+  let to = color(72, 61, 139);
+  let dayColour = lerpColor(from, to, now.progress.day);
+
   
-  var mMax = PI/14;
-  var sMax = PI/14;
-
-  mRot += now.min/60 * mMax;
-  sRot += now.sec/60 * sMax;
-
 translate(width/2, height/2)
 
-  fill(88, 40, 61); 
-  ellipse(0, 0, 100,100); 
-
+  /*Static Circles*/
   noFill(); 
   stroke(234, 234, 234); 
   ellipse(0, 0, 200,200); 
-  ellipse(0, 0, 300,300); 
+  ellipse(0, 0, 300,300);
+  
+  /*Hours*/
+  fill(dayColour);
+  circle(0, 0, dayRadius); 
 
   /*Minutes*/
-  rotate(mRot);
   push();
+  rotate(mRot);
   fill(147, 42, 86); 
   ellipse(0, 100, 20,20);
   pop(); 
 
   /*Seconds*/
-  push(sRot);
+  push();
+  rotate(sRot);
   fill(208, 20, 70); 
   ellipse(0, 150, 20,20);
-  pop();  
+  pop(); 
 } 
