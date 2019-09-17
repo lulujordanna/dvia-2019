@@ -1,4 +1,3 @@
-
 var x = 20 
 var y = 20 
 var barHeight = 20 
