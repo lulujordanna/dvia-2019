@@ -2,16 +2,16 @@ var maxRadius = 100;
 var minRadius = 20; 
 
  function setup() {
-  createCanvas(400, 400)
-  angleMode(DEGREES)
+  createCanvas(400, 400); 
+  angleMode(DEGREES); 
 }
 
 function draw() {
-  background(255)
-  var now = clock()
+  background(255); 
+  var now = clock(); 
 
-  var mRot = now.progress.hour*360 
-  var sRot = now.progress.min*360 
+  var mRot = now.progress.hour*360; 
+  var sRot = now.progress.min*360;  
 
 
   var dayRadius = map(now.progress.day, 0, 1, minRadius, maxRadius); 
@@ -20,7 +20,7 @@ function draw() {
   let dayColour = lerpColor(from, to, now.progress.day);
 
   
-translate(width/2, height/2)
+translate(width/2, height/2); 
 
   /*Static Circles*/
   noFill(); 
