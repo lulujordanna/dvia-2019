@@ -14,7 +14,7 @@ The following sketches are my three concepts for the [Mapping Time](https://dvi
 
 ## Clock Final Outcome
 ![Screenshot of Clock 1](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Clock1.png)
-
+![Screenshot of Clock 2](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Clock2.png)
 
 ## Calendar Sketches
 ![Image of Hand-drawn sketches](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/mappingTime_Sketches2.jpg)
