@@ -13,7 +13,8 @@ The following sketches are my three concepts for the [Mapping Time](https://dvi
 3. The final example highlights three shapes (from large to small) to represent the hiearchy of time. Using colour meters in each shape the progression of time is highlighted. This example uses the retinal variables of colour, size and shape.
 
 ## Clock Final Outcome
-Below are screenshots of my final clock P5 sketches. I tried to stay as close to my hand drawn sketches, particularly in my first two sketches. The third iteration uses rectlangles instead of circles to represent the colour meters. 
+Below are screenshots of my final clock P5 sketches. I tried to stay as close to my hand drawn sketches, particularly in my first two sketches. The third iteration uses rectangles instead of circles to represent the colour meters. 
+
 ![Screenshot of Clock 2](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Clock2.png)
 ![Screenshot of Clock 1](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Clock1.png)
 ![Screenshot of Clock 3](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Clock3.png)
@@ -29,5 +30,9 @@ The following sketches are my three concepts for the extension of the mapping t
 
 3. Finally the last example uses the size and value retinal variables. I am calling it the 'darkness calendar' to conceptualize how much light a given month has. Scale is representative of the month, while value is assigned to the season. The darker and larger a shape is one can speculate it would be in the middle of the winter. 
 
-
+## Calendar Final Outcome
+From my hand sketches to final outcome, the only idea I continued with was the 'Darkness Calendar', highlighted in the first image below. In the second image the out square represents the year, while the inner square is the month. Over time the month changes in colour. The final sketch builds off the radial clock. The additional rings and circles represent the day and week. 
+![Screenshot of Calendar 1](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Calendar1.png)
+![Screenshot of Calendar 2](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Calendar2.png)
+![Screenshot of Calendar 3](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/Calendar3.png)
 
