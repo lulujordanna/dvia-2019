@@ -23,3 +23,14 @@ The following sketches are my three concepts for the extension of the mapping t
 
 3. Finally the last example uses the size and value retinal variables. I am calling it the 'darkness calendar' to conceptualize how much light a given month has. Scale is representative of the month, while value is assigned to the season. The darker and larger a shape is one can speculate it would be in the middle of the winter. 
 
+## Hybrid Sketches 
+
+The following sketches are my three concepts for final mapping time project. Each sketches the hybrid between the 'clock' and 'calendar'. 
+
+1. The first sketch builds off my [radial clock example](https://github.com/lulujordanna/dvia-2019/tree/master/1.mapping-time/2-radialClock) to include the long term calendar elements. Inspired by the solar system diagrams this hybrid example can combine my previous P5.js sketches. 
+
+2. The second sketch extends my [darkness calendar example](https://github.com/lulujordanna/dvia-2019/tree/master/1.mapping-time/1-date-darknessCalendar). Instead of my current iteration which uses a colour on the stroke to highlight which month you're current in, the fill colour would change based on the day in that given month. This would use a gradient of colours to reflect days changing over time. 
+
+3. Finally the third sketch is based off of my [bar clock example](https://github.com/lulujordanna/dvia-2019/tree/master/1.mapping-time/1-barClock). Using the current bar chart as a representation of hours of the day, the month would wrap around the shapes. There would be indicator lines as well to reflect what day in the month it is. 
+
+
