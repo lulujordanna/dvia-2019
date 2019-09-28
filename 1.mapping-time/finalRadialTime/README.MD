@@ -2,7 +2,7 @@
 
 ![Image of Final Twice a Day Project](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/finalRadialTime/FinalOutcome.png)
 
-Inspired a the solar system diagram, my final [Right Twice a Day](https://dvia.samizdat.co/2019/right-twice-a-day/) assignment uses shape and rotation to animate the current time of the day, week and month. Following the goal of the assignment, the final outcome (and previous sketches) were made using P5.js as a way to map primitive shapes represent the time. 
+Inspired a the solar system diagram, my final [Right Twice a Day](https://dvia.samizdat.co/2019/right-twice-a-day/) assignment uses shape and rotation to animate the current time of the day, week and month. Following the goal of the assignment, the final outcome (and previous sketches) were made using P5.js as a way to map primitive shapes onto the time of day. 
 
 Starting from the centre out, the purple circle (not on a grey ring) represents the hour. Over the course of the day, it changes in size and vibrancy to reflect the different hours. The concentric circles rotate on the rings. The dark pink is the minutes, while the bright pink is the seconds. 
 
