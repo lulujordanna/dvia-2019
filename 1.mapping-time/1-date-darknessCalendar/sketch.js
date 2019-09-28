@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   background(255); 
-  var now = clock(); 
+  var now = clock();
 
   var winterColour = 20;
   var springColour = 100;
