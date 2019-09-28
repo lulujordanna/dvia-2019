@@ -1,6 +1,6 @@
-# Process
+## Process
 
-## Clock Sketches
+### Clock Sketches
 
 ![Image of Hand-drawn sketches](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/mappingTime_Sketches.jpg)
 
@@ -12,7 +12,7 @@ The following sketches are my three concepts for the [Mapping Time](https://dvi
 
 3. The final example highlights three shapes (from large to small) to represent the hiearchy of time. Using colour meters in each shape the progression of time is highlighted. This example uses the retinal variables of colour, size and shape.
 
-## Calendar Sketches
+### Calendar Sketches
 ![Image of Hand-drawn sketches](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/mappingTime_Sketches2.jpg)
 
 The following sketches are my three concepts for the extension of the mapping time assignment. Each sketches explores time two of the longer-term calendar variables
@@ -23,7 +23,8 @@ The following sketches are my three concepts for the extension of the mapping t
 
 3. Finally the last example uses the size and value retinal variables. I am calling it the 'darkness calendar' to conceptualize how much light a given month has. Scale is representative of the month, while value is assigned to the season. The darker and larger a shape is one can speculate it would be in the middle of the winter. 
 
-## Hybrid Sketches 
+### Hybrid Sketches 
+![Image of Hand-drawn sketches](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/process/mappingTime_HybridSketches.jpg)
 
 The following sketches are my three concepts for final mapping time project. Each sketches the hybrid between the 'clock' and 'calendar'. 
 
