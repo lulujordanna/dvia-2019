@@ -21,3 +21,7 @@ The final example is similar to the first by looking at the grand total of nucle
 ![Image of hand drawn sketches](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/process/mappingQuantitiesSketches.JPG)
 
 Building off the exploratory excel graphs, I created three hand drawn sketches of possible ways to represent the data. I also incorporated into these options of additional datasets, particularly with an emphasis on comparing countries nuclear testing to the timeline of the [Comprehensive Nuclear-Test-Ban Treaty](https://en.wikipedia.org/wiki/Comprehensive_Nuclear-Test-Ban_Treaty). 
+
+The first sketch uses shading in the background to represent the CTBTO. The x axis is the years (between 1995 - 2004) and the bubbles would highlight the countries that did testing before, during, and after the treaty was created. I selected the time range of 1995 - 2004 as this was the decade that the most countries did testing. Additional the size and position of the bubble would reflect the amount of tests per country/year.
+
+The second sketch extends the third excel example and would include arches around the bubble to reflect if a country has signed the treaty or not. The final examples adds to this but using shading to highlight the environmental impact of nuclear testing. The darker the black (when more tests occur) the more dangerous this is. While I really like this idea of incorporating the environmental and political data, I am unsure if I will be able to find accurate environmental data
