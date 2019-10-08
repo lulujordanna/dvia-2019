@@ -19,3 +19,5 @@ The final example is similar to the first by looking at the grand total of nucle
 
 ### Hand Drawn Sketches
 ![Image of hand drawn sketches](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/process/mappingQuantitiesSketches.JPG)
+
+Building off the exploratory excel graphs, I created three hand drawn sketches of possible ways to represent the data. I also incorporated into these options of additional datasets, particularly with an emphasis on comparing countries nuclear testing to the timeline of the [Comprehensive Nuclear-Test-Ban Treaty](https://en.wikipedia.org/wiki/Comprehensive_Nuclear-Test-Ban_Treaty). 
