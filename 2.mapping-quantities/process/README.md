@@ -29,14 +29,14 @@ The second sketch extends the third excel example and would include arches aroun
 ### SVG Sketches
 Each of my three code sketches were modified using Illustrator. 
 
-![Concept 1](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/project/concept_1.png)
+![Concept 1](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/process/concept_1.png)
 This first example is based off my first drawing in the hand drawn sketches. It looks at the nuclear tests between 1994- 2003 to see which countries were active and using three variations of shading to represent before the Comprehensive Nuclear-Test-Ban Treaty, the year it was signed and afterwards. The positioning of the table was done in P5 but the additional dataset was added in Illustrator. 
 
 
-![Concept 2](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/project/concept_2.png)
+![Concept 2](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/process/concept_2.png)
 The second example builds off the first one but I extended the data set to have a 10 year span before and after the treaty was signed. The shading, legend and introduction paragraph were added in Illustrator. 
 
-![Concept 3](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/project/concept_3.png)
+![Concept 3](https://github.com/lulujordanna/dvia-2019/blob/master/2.mapping-quantities/process/concept_3.png)
 The third example was predominantly created in illustrator. Due to my limited coding knowledge I wasn't able to get the code to run for a one row CSV file. For this sketch I looked at the total number of nuclear tests that each country performed and compared it to the countries average military expenditure of their GDP. 
 
 
