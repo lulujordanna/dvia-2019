@@ -30,13 +30,19 @@
 <path class="st4" d="M233.6,212.8c0-57.2,46.3-103.5,103.5-103.5s103.5,46.3,103.5,103.5s-46.3,103.5-103.5,103.5
 	S233.6,270,233.6,212.8z"/>
 <rect x="433.4" y="205.6" width="14.3" height="14.3"/>
-<text transform="matrix(1 0 0 1 41.1059 237.5196)"><tspan x="0" y="0" class="st4 st5 st6">1101</tspan><tspan x="17.9" y="0" class="st5 st6"> nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">5.27</tspan><tspan x="21.2" y="13.2" class="st5 st6"> military spendature of GDP</tspan></text>
+<text transform="matrix(1 0 0 1 41.1059 237.5196)" class="st4 st5 st6">1101</text>
+<text transform="matrix(1 0 0 1 59.0059 237.5196)" class="st5 st6"> nuclear tests</text>
+<text transform="matrix(1 0 0 1 41.1059 250.7196)" class="st5 st6">5.27</text>
+<text transform="matrix(1 0 0 1 62.3059 250.7196)" class="st5 st6"> military expenditure of GDP</text>
 <g>
 	<text transform="matrix(1 0 0 1 41.1058 60.3424)" class="st7 st2 st8">Total Nuclear Tests vs. Average Military Spend of GDP</text>
 </g>
-<text transform="matrix(1 0 0 1 542.7034 237.5196)"><tspan x="0" y="0" class="st9 st5 st6">818 </tspan><tspan x="19.3" y="0" class="st5 st6">nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">3.98</tspan><tspan x="21.5" y="13.2" class="st5 st6"> military spendature of GDP</tspan></text>
-<path class="st9" d="M752.6,212.8c0-48.8,39.5-88.3,88.3-88.3c48.8,0,88.3,39.5,88.3,88.3s-39.5,88.3-88.3,88.3
-	C792.1,301.1,752.6,261.6,752.6,212.8z"/>
+<text transform="matrix(1 0 0 1 542.7034 237.5196)" class="st9 st5 st6">818 </text>
+<text transform="matrix(1 0 0 1 562.0034 237.5196)" class="st5 st6">nuclear tests</text>
+<text transform="matrix(1 0 0 1 542.7034 250.7196)" class="st5 st6">3.98</text>
+<text transform="matrix(1 0 0 1 564.2034 250.7196)" class="st5 st6"> military expenditure of GDP</text>
+<path class="st9" d="M752.6,212.8c0-48.8,39.5-88.3,88.3-88.3s88.3,39.5,88.3,88.3s-39.5,88.3-88.3,88.3S752.6,261.6,752.6,212.8z"
+	/>
 <rect x="923.3" y="206.9" width="11.8" height="11.8"/>
 <g>
 	<text transform="matrix(1 0 0 1 41.1058 447.9849)" class="st1 st2 st3">France</text>
@@ -46,13 +52,19 @@
 </g>
 <path class="st10" d="M282.6,448.6c0-31.6,25.7-57.3,57.3-57.3s57.3,25.7,57.3,57.3s-25.7,57.3-57.3,57.3S282.6,480.3,282.6,448.6z"
 	/>
-<text transform="matrix(1 0 0 1 41.1059 467.5627)"><tspan x="0" y="0" class="st10 st5 st6">210</tspan><tspan x="16.9" y="0" class="st5 st6"> nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">3.49</tspan><tspan x="21.3" y="13.2" class="st5 st6"> military spendature of GDP</tspan></text>
-<text transform="matrix(1 0 0 1 542.7034 467.5627)"><tspan x="0" y="0" class="st11 st5 st6">61</tspan><tspan x="10.2" y="0" class="st5 st6"> nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">3.70</tspan><tspan x="21.1" y="13.2" class="st5 st6"> military spendature of GDP</tspan></text>
+<text transform="matrix(1 0 0 1 41.1059 467.5627)" class="st10 st5 st6">210</text>
+<text transform="matrix(1 0 0 1 58.0059 467.5627)" class="st5 st6"> nuclear tests</text>
+<text transform="matrix(1 0 0 1 41.1059 480.7627)" class="st5 st6">3.49</text>
+<text transform="matrix(1 0 0 1 62.4059 480.7627)" class="st5 st6"> military expenditure of GDP</text>
+<text transform="matrix(1 0 0 1 542.7034 467.5627)" class="st11 st5 st6">61</text>
+<text transform="matrix(1 0 0 1 552.9034 467.5627)" class="st5 st6"> nuclear tests</text>
+<text transform="matrix(1 0 0 1 542.7034 480.7627)" class="st5 st6">3.70</text>
+<text transform="matrix(1 0 0 1 563.8034 480.7627)" class="st5 st6"> military expenditure of GDP</text>
 <path class="st11" d="M799.2,447.7c0-24.4,19.8-44.1,44.1-44.1s44.1,19.8,44.1,44.1s-19.8,44.1-44.1,44.1S799.2,472.1,799.2,447.7z"
 	/>
 <rect x="881.6" y="441.8" width="11.8" height="11.8"/>
 <rect x="391.3" y="442.7" width="11.8" height="11.8"/>
-<path class="st12" d="M327.9,792.9c0-7.3,5.9-13.2,13.2-13.2c7.3,0,13.2,5.9,13.2,13.2c0,7.3-5.9,13.2-13.2,13.2
+<path class="st12" d="M327.9,792.9c0-7.3,5.9-13.2,13.2-13.2c7.3,0,13.2,5.9,13.2,13.2s-5.9,13.2-13.2,13.2
 	C333.8,806.1,327.9,800.2,327.9,792.9z"/>
 <g>
 	<text transform="matrix(1 0 0 1 41.1058 630.944)" class="st1 st2 st3">China</text>
@@ -60,8 +72,14 @@
 <g>
 	<text transform="matrix(1 0 0 1 542.7036 631.5708)" class="st1 st2 st3">North Korea</text>
 </g>
-<text transform="matrix(1 0 0 1 41.1059 650.5217)"><tspan x="0" y="0" class="st0 st5 st6">52</tspan><tspan x="13" y="0" class="st5 st6"> nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">1.98</tspan><tspan x="19.2" y="13.2" class="st5 st6"> military spendature of GDP</tspan></text>
-<text transform="matrix(1 0 0 1 542.7034 650.5217)"><tspan x="0" y="0" class="st13 st5 st6">6</tspan><tspan x="6.5" y="0" class="st5 st6"> nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">Unavailable </tspan><tspan x="59.3" y="13.2" class="st5 st6">military spendature of GDP</tspan></text>
+<text transform="matrix(1 0 0 1 41.1059 650.5217)" class="st0 st5 st6">52</text>
+<text transform="matrix(1 0 0 1 54.1059 650.5217)" class="st5 st6"> nuclear tests</text>
+<text transform="matrix(1 0 0 1 41.1059 663.7217)" class="st5 st6">1.98</text>
+<text transform="matrix(1 0 0 1 60.3059 663.7217)" class="st5 st6"> military expenditure of GDP</text>
+<text transform="matrix(1 0 0 1 542.7034 650.5217)" class="st13 st5 st6">6</text>
+<text transform="matrix(1 0 0 1 549.2034 650.5217)" class="st5 st6"> nuclear tests</text>
+<text transform="matrix(1 0 0 1 542.7034 663.7217)" class="st5 st6">Unavailable </text>
+<text transform="matrix(1 0 0 1 602.0034 663.7217)" class="st5 st6">military expenditure of GDP</text>
 <path class="st13" d="M826.1,630.1c0-9,7.3-16.2,16.2-16.2s16.2,7.3,16.2,16.2s-7.3,16.2-16.2,16.2S826.1,639.1,826.1,630.1z"/>
 <rect x="377.7" y="626.8" width="8.5" height="8.5"/>
 <g>
@@ -70,9 +88,15 @@
 <g>
 	<text transform="matrix(1 0 0 1 542.7036 794.3262)" class="st1 st2 st3">Pakistan</text>
 </g>
-<text transform="matrix(1 0 0 1 41.1059 813.2771)"><tspan x="0" y="0" class="st12 st5 st6">3</tspan><tspan x="6.1" y="0" class="st5 st6"> nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">3.05</tspan><tspan x="21.9" y="13.2" class="st5 st6"> military spendature of GDP</tspan></text>
-<text transform="matrix(1 0 0 1 542.7034 813.2771)"><tspan x="0" y="0" class="st14 st5 st6">2</tspan><tspan x="6.5" y="0" class="st5 st6"> nuclear tests</tspan><tspan x="0" y="13.2" class="st5 st6">5.11 </tspan><tspan x="19.3" y="13.2" class="st5 st6">military spendature of GDP</tspan></text>
-<path class="st14" d="M830.1,792.9c0-7.3,5.9-13.2,13.2-13.2c7.3,0,13.2,5.9,13.2,13.2c0,7.3-5.9,13.2-13.2,13.2
+<text transform="matrix(1 0 0 1 41.1059 813.2771)" class="st12 st5 st6">3</text>
+<text transform="matrix(1 0 0 1 47.2059 813.2771)" class="st5 st6"> nuclear tests</text>
+<text transform="matrix(1 0 0 1 41.1059 826.4771)" class="st5 st6">3.05</text>
+<text transform="matrix(1 0 0 1 63.0059 826.4771)" class="st5 st6"> military expenditure of GDP</text>
+<text transform="matrix(1 0 0 1 542.7034 813.2771)" class="st14 st5 st6">2</text>
+<text transform="matrix(1 0 0 1 549.2034 813.2771)" class="st5 st6"> nuclear tests</text>
+<text transform="matrix(1 0 0 1 542.7034 826.4771)" class="st5 st6">5.11 </text>
+<text transform="matrix(1 0 0 1 562.0034 826.4771)" class="st5 st6">military expenditure of GDP</text>
+<path class="st14" d="M830.1,792.9c0-7.3,5.9-13.2,13.2-13.2s13.2,5.9,13.2,13.2s-5.9,13.2-13.2,13.2
 	C836.1,806.1,830.1,800.2,830.1,792.9z"/>
 <rect x="348.5" y="787.4" width="11.8" height="11.8"/>
 <rect x="849.5" y="785.8" width="14.3" height="14.3"/>
