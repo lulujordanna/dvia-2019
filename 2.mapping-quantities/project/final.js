@@ -15,7 +15,7 @@ function setup(){
   print(table)
 
   // set up typography
-  textFont("Proxima Nova")
+  textFont("Courier New")
   textSize(14)
   fill(30)
   noStroke()
@@ -33,20 +33,19 @@ function setup(){
     y += rowHeight
   }
 
-
-  // draw year labels in the header row
-  x = 200
-  y = 100
-  textStyle(NORMAL)
-  textAlign(CENTER)
-  for (var r=0; r<table.getRowCount(); r++){
-    var year = table.getString(r, 0)
-    text(year, x, y-rowHeight)
-    x += colWidth
-  }
+    // draw year labels in the header row
+    x = 200
+    y = 800
+    textStyle(NORMAL)
+    textAlign(CENTER)
+    for (var r=0; r<table.getRowCount(); r++){
+      var year = table.getString(r, 0)
+      text(year, x, y-rowHeight)
+      x += colWidth
+    }
 
   // colors for countries based on Color Brewer Qualitative Palette 
-  var colors = ['#66c2a5', '#a6d854', '#8da0cb', '#e5c494', '#ffd92f', '#fc8d62', '#e78ac3', '#b3b3b3' ]; 
+  //var colors = ['#66c2a5', '#a6d854', '#8da0cb', '#e5c494', '#ffd92f', '#fc8d62', '#e78ac3', '#b3b3b3' ]; 
 
   // print out the total for each country, one column at a time
   x = 200
@@ -55,12 +54,12 @@ function setup(){
     for (var c=1; c<table.getColumnCount(); c++){
       var value = table.getNum(r, c)
       if (value > 0) { 
-        fill(colors[r])
-        circle(x, y, value*1)
+        //fill(colors[r])
+        circle(x, y, value)
       } 
       y += rowHeight
     }
     x += colWidth
   }
-  save('concept_2.svg')
+  save('final_1.svg')
   }
