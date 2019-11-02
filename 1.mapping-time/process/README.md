@@ -36,6 +36,6 @@ The following sketches are my three concepts for final mapping time project. Eac
 3. Finally the third sketch is based off of my [bar clock example](https://github.com/lulujordanna/dvia-2019/tree/master/1.mapping-time/1-barClock). Using the current bar chart as a representation of hours of the day, the month would wrap around the shapes. There would be indicator lines as well to reflect what day in the month it is. 
 
 ### Final Outcome 
-View the final outcome [here](https://github.com/lulujordanna/dvia-2019/tree/master/1.mapping-time/finalRadialTime).
+View the final outcome and write up [here](https://github.com/lulujordanna/dvia-2019/tree/master/1.mapping-time/finalRadialTime).
 ![Image of Radial Clock](https://github.com/lulujordanna/dvia-2019/blob/master/1.mapping-time/finalRadialTime/FinalOutcome.png)
 
