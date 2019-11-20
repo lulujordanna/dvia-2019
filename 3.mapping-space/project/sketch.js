@@ -17,15 +17,19 @@ function setup() {
     addCircles();
 
     // generate a p5 diagram that complements the map, communicating the earthquake data non-spatially
-    createCanvas(800, 600)
-    background(222)
+    createCanvas(800, 200)
+    background(233)
+    stroke(255);
 
-    fill(0)
-    noStroke()
-    textSize(16)
-    text(`Plotting ${table.getRowCount()} seismic events`, 20, 40)
-    text(`Largest Magnitude: ${columnMax(table, "mag")}`, 20, 60)
-    text(`Greatest Depth: ${columnMax(table, "depth")}`, 20, 80)
+    var colorScale = chroma.scale('YlGnBu').mode('lch')
+    var start = 30;
+    var step = 40;
+
+for (var i=0; i<17; i++){
+    var loc = start + i*step
+    fill(colorScale(i/17).rgb())
+    rect(loc, 20, 40, 75);
+  }
 }
 
 function setupMap(){
@@ -38,16 +42,18 @@ function setupMap(){
     */
 
     // create your own map
-    mymap = L.map('quake-map').setView([51.505, -0.09], 3);
+    mymap = L.map('quake-map').setView([38.7745018, -120.7409973], 5.5);
 
     // load a set of map tiles – choose from the different providers demoed here:
     // https://leaflet-extras.github.io/leaflet-providers/preview/
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox.streets',
-        accessToken: 'pk.eyJ1IjoiZHZpYTIwMTciLCJhIjoiY2o5NmsxNXIxMDU3eTMxbnN4bW03M3RsZyJ9.VN5cq0zpf-oep1n1OjRSEA'
-    }).addTo(mymap);
+
+    var Stamen_TonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        subdomains: 'abcd',
+        minZoom: 0,
+        maxZoom: 20,
+        ext: 'png'
+    }).addTo(mymap);;
 }
 
 function addCircles(){
@@ -71,10 +77,10 @@ function addCircles(){
 
         // create a new dot
         var circle = L.circle([row.getNum('latitude'), row.getNum('longitude')], {
-            color: 'red',      // the dot stroke color
-            fillColor: '#f03', // the dot fill color
+            color: '#296c96',      // the dot stroke color
+            fillColor: '#4591bf', // the dot fill color
             fillOpacity: 0.25,  // use some transparency so we can see overlaps
-            radius: row.getNum('mag') * 40000
+            radius: row.getNum('mag')* 10000
         })
 
         // place the new dot on the map
@@ -82,14 +88,14 @@ function addCircles(){
     }
 }
 
-// removes any circles that have been added to the map
-function removeAllCircles(){
-    mymap.eachLayer(function(layer){
-        if (layer instanceof L.Circle){
-            mymap.removeLayer(layer)
-        }
-    })
-}
+// // removes any circles that have been added to the map
+// function removeAllCircles(){
+//     mymap.eachLayer(function(layer){
+//         if (layer instanceof L.Circle){
+//             mymap.removeLayer(layer)
+//         }
+//     })
+// }
 
 // get the maximum value within a column
 function columnMax(tableObject, columnName){
