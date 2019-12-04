@@ -12,7 +12,7 @@ var totalValues = [20, 545, 113, 179, 201, 289, 287, 433, 486, 473, 562, 637, 53
 
 function preload() {
     // load the CSV data into our `table` variable and clip out the header row
-    table = loadTable("../data/all_month.csv", "csv", "header");
+    table = loadTable("../data/all_month2.csv", "csv", "header");
     img = loadImage('../project/day-graph.png');
 }
 
@@ -49,7 +49,7 @@ function setup() {
 
     for (var i=0; i<18; i++){
         var loc = start + i*step
-        text(scale[i], loc, 150);
+        text(scale[i], loc + 20, 150);
     }
     
     push();
@@ -63,8 +63,16 @@ function setup() {
     push();
     textSize(20)
     textStyle(BOLD)
-    text(`Plotting ${table.getRowCount()} seismic events grouped by magnitude`, 45, 1480)
+    text(`Plotting ${table.getRowCount()} seismic events grouped by magnitude`, 45, 1500)
     pop(); 
+
+    var start2 = 23;
+    var step2 = 45;
+
+    for (var i=0; i<18; i++){
+        var loc = start2 + i*step2
+        text(scale[i], loc + 20, 1535);
+    }
 
     for (var i = 0; i < totalValues.length; i++) {
         fill(colorScale(i/18).rgb()); 
@@ -84,7 +92,6 @@ function setup() {
 function setupMap(){
     /*
     LEAFLET CODE
-
     In this case "L" is leaflet. So whenever you want to interact with the leaflet library
     you have to refer to L first.
     so for example L.map('mapid') or L.circle([lat, long])
