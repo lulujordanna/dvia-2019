@@ -7,8 +7,7 @@ var mymap;
 var colorScale = chroma.scale('YlGnBu').mode('lch')
 
 //magnitude scale + values
-let scale = ['-1', '-0', '0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1 ', '2 ', '3 ', '4 ', '5 ', '6']; 
-let separator = '              ';
+let scale = ['-1', '-0', '0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1', '2', '3', '4', '5', '6']; 
 var totalValues = [20, 545, 113, 179, 201, 289, 287, 433, 486, 473, 562, 637, 5340, 1530, 314, 581, 122, 9];
 
 function preload() {
@@ -29,7 +28,7 @@ function setup() {
     background(233)
     noStroke()
     
-    //setting up Typography
+    //Setting up Typography
     textFont("Proxima Nova")
     fill(0)
     textSize(16)
@@ -48,25 +47,38 @@ function setup() {
         rect(loc, 75, 75, 50);
     }
 
-    let message = join(scale, separator);
-    text(message, 45, 150);
+    for (var i=0; i<18; i++){
+        var loc = start + i*step
+        text(scale[i], loc, 150);
+    }
     
     push();
     textSize(20)
-    text(`Plotting ${table.getRowCount()} seismic events in order of occurance`, 45, 220)
+    textStyle(BOLD)
+    text(`Plotting ${table.getRowCount()} seismic events in order of occurance from October 7th to November 6th`, 45, 220)
     pop(); 
     
     image(img, 30, 230, 1380, 1200)
     
     push();
     textSize(20)
+    textStyle(BOLD)
     text(`Plotting ${table.getRowCount()} seismic events grouped by magnitude`, 45, 1480)
     pop(); 
 
     for (var i = 0; i < totalValues.length; i++) {
-        fill(colorScale(i/17).rgb()); 
-        rect(i * 45 + 45, 1500, 20, totalValues[i]);
+        fill(colorScale(i/18).rgb()); 
+        rect(i * 45 + 45, 1540, 20, totalValues[i]);
     }
+
+    stroke('white')
+    fill('white')
+    rect(900, 1540, 500, 400)
+
+    push();
+    fill(0)
+    text(`Paragraph`, 920, 1600)
+    pop();
 }
 
 function setupMap(){
