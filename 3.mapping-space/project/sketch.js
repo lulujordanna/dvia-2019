@@ -7,8 +7,8 @@ var mymap;
 var colorScale = chroma.scale('YlGnBu').mode('lch')
 
 //magnitude scale + values
-let scale = ['-1', '-0', '0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1', '2', '3', '4', '5', '6']; 
-var totalValues = [20, 545, 113, 179, 201, 289, 287, 433, 486, 473, 562, 637, 5340, 1530, 314, 581, 122, 9];
+let scale = ['-1', '0', '1', '2', '3', '4', '5', '6']; 
+var totalValues = [565, 3360, 5340, 1530, 314, 581, 122, 9];
 
 function preload() {
     // load the CSV data into our `table` variable and clip out the header row
@@ -38,27 +38,30 @@ function setup() {
     textStyle(BOLD)
     text(`Evaluating Magnitude`, 45, 55)
     pop(); 
+    
+    text(`Plotting ${table.getRowCount()} seismic events`, 45, 78)
 
     var start = 45;
-    var step = 75;
-    for (var i=0; i<18; i++){
+    var step = 170;
+    for (var i=0; i<8; i++){
         var loc = start + i*step
-        fill(colorScale(i/17).rgb())
-        rect(loc, 75, 75, 50);
+        fill(colorScale(i/8).rgb())
+        rect(loc, 100, 170, 50);
     }
 
-    for (var i=0; i<18; i++){
+    for (var i=0; i<8; i++){
         var loc = start + i*step
-        text(scale[i], loc + 20, 150);
+        fill(0)
+        text(scale[i], loc + 75, 180);
     }
     
-    push();
-    textSize(20)
-    textStyle(BOLD)
-    text(`Plotting ${table.getRowCount()} seismic events in order of occurance from October 7th to November 6th`, 45, 220)
-    pop(); 
+    // push();
+    // textSize(20)
+    // textStyle(BOLD)
+    // text(`Plotting ${table.getRowCount()} seismic events in order of occurance from October 7th to November 6th`, 45, 220)
+    // pop(); 
     
-    image(img, 30, 230, 1380, 1200)
+    // image(img, 30, 230, 1380, 1200)
     
     push();
     textSize(20)
@@ -69,13 +72,13 @@ function setup() {
     var start2 = 23;
     var step2 = 45;
 
-    for (var i=0; i<18; i++){
+    for (var i=0; i<8; i++){
         var loc = start2 + i*step2
-        text(scale[i], loc + 20, 1535);
+        text(scale[i], loc + 26, 1535);
     }
 
     for (var i = 0; i < totalValues.length; i++) {
-        fill(colorScale(i/18).rgb()); 
+        fill(colorScale(i/8).rgb()); 
         rect(i * 45 + 45, 1540, 20, totalValues[i]);
     }
 
