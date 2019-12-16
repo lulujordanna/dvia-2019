@@ -4,7 +4,7 @@ let img;
 
 // my leaflet.js map
 var mymap;
-var colorScale = chroma.scale('YlGnBu').mode('lch')
+var colorScale = chroma.scale('YlGnBu').mode('lch').domain([0, 7])
 
 //magnitude scale + values
 let scale = ['-1', '0', '1', '2', '3', '4', '5', '6']; 
@@ -24,8 +24,8 @@ function setup() {
     addCircles();
 
     // generate a p5 diagram that complements the map, communicating the earthquake data non-spatially
-    createCanvas(1440, 3000)
-    background(233)
+    createCanvas(1440, 4000)
+    background(255)
     noStroke()
     
     //Setting up Typography
@@ -33,19 +33,20 @@ function setup() {
     fill(0)
     textSize(16)
 
+    //Title & subtitle
     push(); 
     textSize(28)
     textStyle(BOLD)
     text(`Evaluating Magnitude`, 45, 55)
     pop(); 
-    
     text(`Plotting ${table.getRowCount()} seismic events`, 45, 78)
 
+    //Color Scale
     var start = 45;
     var step = 170;
     for (var i=0; i<8; i++){
         var loc = start + i*step
-        fill(colorScale(i/8).rgb())
+        fill(colorScale(i).hex())
         rect(loc, 100, 170, 50);
     }
 
@@ -63,6 +64,7 @@ function setup() {
     
     // image(img, 30, 230, 1380, 1200)
     
+    //Vertical Bar Chart
     push();
     textSize(20)
     textStyle(BOLD)
@@ -78,7 +80,7 @@ function setup() {
     }
 
     for (var i = 0; i < totalValues.length; i++) {
-        fill(colorScale(i/8).rgb()); 
+        fill(colorScale(i).hex()); 
         rect(i * 45 + 45, 1540, 20, totalValues[i]);
     }
 
@@ -106,19 +108,18 @@ function setupMap(){
     // load a set of map tiles – choose from the different providers demoed here:
     // https://leaflet-extras.github.io/leaflet-providers/preview/
 
-    var Stamen_TonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
-        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        subdomains: 'abcd',
-        minZoom: 2,
-        maxZoom: 6,
-        ext: 'png'
-    }).addTo(mymap);;
+    var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	minZoom: 2,
+    maxZoom: 6,
+ }).addTo(mymap);
 }
 
 function addCircles(){
     // calculate minimum and maximum values for magnitude and depth
-    var magnitudeMin = columnMin(table, "magReclass");
-    var magnitudeMax = columnMax(table, "magReclass");
+    var magnitudeMin = columnMin(table, "mag");
+    var magnitudeMax = columnMax(table, "mag");
     console.log('magnitude range:', [magnitudeMin, magnitudeMax])
 
     // step through the rows of the table and add a dot for each event
@@ -126,20 +127,20 @@ function addCircles(){
         var row = table.getRow(i)
 
         // skip over any rows where the magnitude data is missing
-        if (row.get('magReclass')==''){
+        if (row.get('mag')==''){
             continue
         }
 
         // create a new dot
         var circle = L.circle([row.getNum('latitude'), row.getNum('longitude')], {
-            color: colorScale(row.getNum('magReclass')/6).hex(), // the dot stroke color
-            fillColor: colorScale(row.getNum('magReclass')/6).hex(), // the dot fill color
+            color: colorScale(row.getNum('magReclassColor')).hex(), // the dot stroke color
+            fillColor: colorScale(row.getNum('magReclassColor')).hex(), // the dot fill color
             fillOpacity: 1.0,
-            radius: row.getNum('magReclass')* 10000
+            radius: row.getNum('mag')* 10000
         })
 
         // place the new dot on the map
-        circle.addTo(mymap);
+        circle.bindPopup(moment(row.get('time')).format('MMMM Do YYYY, h:mm:ss a')).addTo(mymap);
     }
 }
 
