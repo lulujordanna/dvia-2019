@@ -2,10 +2,12 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../libraries/leaflet/leaflet.css" /> <!-- default styles -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
   <style>
     html, body {
       padding: 0;
       margin: 0;
+      color: #8d99a3;
     }
 
     /* default dimensions for the leaflet map */
@@ -13,9 +15,44 @@
       width: 1440px;
       height: 550px;
     }
+
+    #header{padding: 50px;}
+    
+    h1{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      letter-spacing: 2px;
+      margin-bottom: 0px; 
+      color: #8d99a3;
+    }
+
+    .subheader{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      margin-top: 5px; 
+      margin-bottom: 45px;
+      color: #8d99a3; 
+    }
+
+    p{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #8d99a3; 
+    }
+
   </style>
 </head>
 <body>
+  
+  <div id="header"> 
+    <h1>EVALUATING MAGNITUDE</h1>
+    <p class="subheader">Plotting 12,121 seismic events</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim arcu sed metus ultricies, eu pulvinar augue varius. Maecenas id quam vel leo vehicula luctus sollicitudin ac velit. Duis et auctor justo, in dictum ante. Duis gravida tincidunt scelerisque. Etiam mollis imperdiet arcu ut malesuada. Cras dignissim, justo quis porta condimentum, urna eros malesuada quam, ac euismod metus magna quis ipsum. Aliquam hendrerit sit amet diam vitae ultrices. In euismod facilisis dui vitae tristique. Cras id nibh ac nisi tincidunt pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam efficitur nulla non pharetra ultricies.</p>
+  </div>
+
   <!-- The container div for our leaflet map -->
   <div id="quake-map"></div>
 

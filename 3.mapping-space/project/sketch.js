@@ -29,17 +29,9 @@ function setup() {
     noStroke()
     
     //Setting up Typography
-    textFont("Proxima Nova")
-    fill(0)
+    textFont("Montserrat")
+    fill(141, 153, 163)
     textSize(16)
-
-    //Title & subtitle
-    push(); 
-    textSize(28)
-    textStyle(BOLD)
-    text(`Evaluating Magnitude`, 45, 55)
-    pop(); 
-    text(`Plotting ${table.getRowCount()} seismic events`, 45, 78)
 
     //Color Scale
     var start = 45;
@@ -47,28 +39,43 @@ function setup() {
     for (var i=0; i<8; i++){
         var loc = start + i*step
         fill(colorScale(i).hex())
-        rect(loc, 100, 170, 50);
+        rect(loc, 60, 170, 22);
     }
 
     for (var i=0; i<8; i++){
         var loc = start + i*step
-        fill(0)
-        text(scale[i], loc + 75, 180);
+        fill(141, 153, 163)
+        text(scale[i], loc + 75, 110);
     }
-    
-    // push();
-    // textSize(20)
-    // textStyle(BOLD)
-    // text(`Plotting ${table.getRowCount()} seismic events in order of occurance from October 7th to November 6th`, 45, 220)
-    // pop(); 
-    
-    // image(img, 30, 230, 1380, 1200)
-    
-    //Vertical Bar Chart
+
     push();
-    textSize(20)
+    stroke(141, 153, 163);
+    strokeWeight(0.25);
+    line(45, 150, 1400, 150);
+    pop(); 
+
+    //Graph by Day
+    push();
+    textSize(22)
     textStyle(BOLD)
-    text(`Plotting ${table.getRowCount()} seismic events grouped by magnitude`, 45, 1500)
+    fill(141, 153, 163)
+    text(`MAGNITUDE BY DAY`, 45, 215)
+    pop(); 
+    
+    image(img, 30, 230, 1300, 1287)
+
+    push();
+    stroke(141, 153, 163);
+    strokeWeight(0.25);
+    line(45, 1540, 1400, 1540);
+    pop(); 
+    
+    //Graph by Magnitude
+    push();
+    textSize(22)
+    textStyle(BOLD)
+    fill(141, 153, 163)
+    text(`MAGNITUDE BY CLASSIFICATION`, 45, 1610)
     pop(); 
 
     var start2 = 23;
@@ -76,22 +83,22 @@ function setup() {
 
     for (var i=0; i<8; i++){
         var loc = start2 + i*step2
-        text(scale[i], loc + 26, 1535);
+        text(scale[i], loc + 26, 1665);
     }
 
     for (var i = 0; i < totalValues.length; i++) {
         fill(colorScale(i).hex()); 
-        rect(i * 45 + 45, 1540, 20, totalValues[i]);
+        rect(i * 45 + 45, 1675, 22, totalValues[i]);
     }
 
-    stroke('white')
-    fill('white')
-    rect(900, 1540, 500, 400)
+    // stroke('white')
+    // fill('white')
+    // rect(900, 1540, 500, 400)
 
-    push();
-    fill(0)
-    text(`Paragraph`, 920, 1600)
-    pop();
+    // push();
+    // fill(0)
+    // text(`Paragraph`, 920, 1600)
+    // pop();
 }
 
 function setupMap(){
@@ -103,7 +110,7 @@ function setupMap(){
     */
 
     // create your own map
-    mymap = L.map('quake-map').setView([38.499427, -122.949844], 4);
+    mymap = L.map('quake-map', {scrollWheelZoom: false }).setView([38.499427, -122.949844], 4);
 
     // load a set of map tiles – choose from the different providers demoed here:
     // https://leaflet-extras.github.io/leaflet-providers/preview/
@@ -140,7 +147,7 @@ function addCircles(){
         })
 
         // place the new dot on the map
-        circle.bindPopup(moment(row.get('time')).format('MMMM Do YYYY, h:mm:ss a')).addTo(mymap);
+        circle.bindPopup(moment(row.get('time')).format('MMMM Do YYYY') + "," + " " + row.getNum('mag') + " " + 'magnitude' ).addTo(mymap);
     }
 }
 
