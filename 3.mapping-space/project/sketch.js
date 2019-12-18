@@ -1,6 +1,7 @@
 // the data loaded from a USGS-provided CSV file
 var table;
 let img;
+let img2;
 
 // my leaflet.js map
 var mymap;
@@ -14,6 +15,7 @@ function preload() {
     // load the CSV data into our `table` variable and clip out the header row
     table = loadTable("../data/all_month2.csv", "csv", "header");
     img = loadImage('../project/day-graph.png');
+    img2 = loadImage('../project/totals.png');
 }
 
 function setup() {
@@ -59,10 +61,16 @@ function setup() {
     textSize(22)
     textStyle(BOLD)
     fill(141, 153, 163)
-    text(`MAGNITUDE BY DAY`, 45, 215)
+    text(`MAGNITUDE SIZE BY DAY`, 45, 215)
     pop(); 
+
+    push();
+    fill(141, 153, 163)
+    let s = `Earthquakes are grouped by representative value of the Richter magnitude scale. Each bar is representative of the total number of earthquakes from that day. `
+    text(s, 45, 225, 1400, 300)
+    pop();
     
-    image(img, 30, 230, 1300, 1287)
+    image(img, 30, 250, 1300, 1287)
 
     push();
     stroke(141, 153, 163);
@@ -75,7 +83,7 @@ function setup() {
     textSize(22)
     textStyle(BOLD)
     fill(141, 153, 163)
-    text(`MAGNITUDE BY CLASSIFICATION`, 45, 1610)
+    text(`MAGNITUDE SIZE BY CLASSIFICATION`, 45, 1610)
     pop(); 
 
     var start2 = 23;
@@ -91,14 +99,13 @@ function setup() {
         rect(i * 45 + 45, 1675, 22, totalValues[i]);
     }
 
-    // stroke('white')
-    // fill('white')
-    // rect(900, 1540, 500, 400)
+    image(img2, 500, 1665, 609, 25)
 
-    // push();
-    // fill(0)
-    // text(`Paragraph`, 920, 1600)
-    // pop();
+    push();
+    fill(141, 153, 163)
+    let s2 = `Both diagrammatic visualizations highlight the dominate earthquake magnitude falls between 0 - 2. Mapping this by classification provides an aggregated view of the variation, while the stacked bar chart above is a in-depth representation of the same data by day. `
+    text(s2, 500, 1720, 820, 300)
+    pop();
 }
 
 function setupMap(){
