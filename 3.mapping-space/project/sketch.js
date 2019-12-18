@@ -61,12 +61,12 @@ function setup() {
     textSize(22)
     textStyle(BOLD)
     fill(141, 153, 163)
-    text(`MAGNITUDE SIZE BY DAY`, 45, 215)
+    text(`MAGNITUDE BY DAY`, 45, 215)
     pop(); 
 
     push();
     fill(141, 153, 163)
-    let s = `Earthquakes are grouped by representative value of the Richter magnitude scale. Each bar is representative of the total number of earthquakes from that day. `
+    let s = `Earthquakes are grouped by representative value of the Richter magnitude scale. Each bar highlights of the total number of earthquakes for that day.`
     text(s, 45, 225, 1400, 300)
     pop();
     
@@ -83,7 +83,7 @@ function setup() {
     textSize(22)
     textStyle(BOLD)
     fill(141, 153, 163)
-    text(`MAGNITUDE SIZE BY CLASSIFICATION`, 45, 1610)
+    text(`MAGNITUDE BY CLASSIFICATION`, 45, 1610)
     pop(); 
 
     var start2 = 23;
@@ -99,12 +99,12 @@ function setup() {
         rect(i * 45 + 45, 1675, 22, totalValues[i]);
     }
 
-    image(img2, 500, 1665, 609, 25)
+    image(img2, 495, 1675, 800, 34)
 
     push();
     fill(141, 153, 163)
-    let s2 = `Both diagrammatic visualizations highlight the dominate earthquake magnitude falls between 0 - 2. Mapping this by classification provides an aggregated view of the variation, while the stacked bar chart above is a in-depth representation of the same data by day. `
-    text(s2, 500, 1720, 820, 300)
+    let s2 = `Both diagrammatic visualizations highlight that the dominate earthquake magnitude size falls between 0 - 2. Mapping this by classification provides an aggregated view, while the stacked bar chart above is a in-depth representation of the same data.`
+    text(s2, 500, 1730, 820, 300)
     pop();
 }
 
